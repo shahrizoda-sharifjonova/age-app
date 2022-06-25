@@ -1,0 +1,197 @@
+.intro{
+    height: calc(100vh - 100px);
+    background: url('../img/intro-bg.svg') center / cover no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include media(1600){
+        height: max-content;
+        padding: 50px 0;
+    }
+    @include media(992){
+        padding-top: 18px;
+        padding-bottom: 40px;
+        background: url('../img/intro-bg.svg') left / cover no-repeat;
+    }
+    &__girl{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        img{
+            height: 100%;
+        }
+        @include media(1600){
+            display: none;
+        }
+    }
+    &__boy{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        img{
+            height: 100%;
+        }
+        @include media(1600){
+            display: none;
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 50px;
+        @include media(1600){
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+    &__content{
+        padding-top: 65px;
+        @include media(1600){
+            padding-top: 0;
+        }
+        @include media(992){
+            width: 100%;
+        }
+    }
+    &__desc{
+        margin-bottom: 16px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #0B2238;
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -1px;
+        color: #222222;
+        max-width: 521px;
+        width: 100%;
+        margin-bottom: 29px;
+        @include media(992){
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 10px;
+            max-width: 100%;
+        }
+    }
+    &__p{
+        margin-bottom: 61px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #475766;
+        @include media(992){
+            margin-bottom: 40px;
+        }
+    }
+    &__links{
+        display: flex;
+        column-gap: 14px;
+        margin-bottom: 29px;
+        @include media(575){
+            justify-content: center;
+            column-gap: 13px;
+        }
+    }
+    &__btn{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 58px;
+        background: linear-gradient(85.89deg, #8FDA75 7.82%, #4E9B1F 117.28%);
+        border-radius: 10px;
+        width: 323px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(575){
+            margin-bottom: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    }
+    &__offer{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #4F4F4F;
+        max-width: 308px;
+        width: 100%;
+        margin-bottom: 35px;
+        @include media(575){
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 33px;
+            text-align: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.2px;
+            text-decoration-line: underline;
+            color: #4F4F4F;
+        }
+    }
+    &__sites{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        @include media(575){
+            justify-content: center;
+            column-gap: 35px;
+        }
+    }
+    &__site{
+        @include media(575){
+            width: 25px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__img{
+        @include media(992){
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+        &.enable-lg{
+            @include media(576){
+                display: flex !important;
+            }
+        }
+        img{
+            @include media(992){
+                width: 170px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+        }
+    }
+}

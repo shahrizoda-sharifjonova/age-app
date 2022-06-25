@@ -1,0 +1,123 @@
+.header{
+    padding: 23px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    z-index: 50;
+    @include media(575){
+        padding: 8px 0;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #0B2238;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+    }
+    &__list{
+        @include media(992){
+            position: absolute;
+            top: 70px;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 300ms ease;
+            background: rgba(255, 255, 255);
+            height: 100vh;
+            bottom: 0;
+            padding-top: 37px;
+            left: 0;
+            @include media(575){
+                top: 50px;
+            }
+        }
+        &-content{
+            display: flex;
+            align-items: center;
+            column-gap: 70px;
+            @include media(992){
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 27px;
+            }
+            @include media(575){
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        &.active{
+            top: 76px;
+            opacity: 1;
+            visibility: visible;
+            @include media(575){
+                top: 61px;
+            }
+        }
+        @include media(575){
+            left: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #000000;
+        column-gap: 9px;
+        transition: 300ms ease;
+        &:hover{
+            color: #6547A5;
+        }
+    }
+    &__btn{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #6547A5;
+        width: 80px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #C1A8F0;
+        border-radius: 10px;
+        transition: 300ms ease;
+        @include media(992){
+            width: 228px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        @include media(575){
+            left: 0;
+        }
+        &:hover{
+            background: #C1A8F0;
+            color: #fff;
+        }
+    }
+    .menu{
+        &-btn{
+            &.active{
+                display: block;
+            }
+            &.hidden{
+                display: none;
+            }
+        }
+    }
+}

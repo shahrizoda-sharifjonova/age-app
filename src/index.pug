@@ -10,7 +10,11 @@ html(lang="en")
         .wrapper 
             include components/header 
             +header 
-            .main 
+            .main
+                include components/intro 
+                +intro 
+                include components/features 
+                +features 
             include components/footer 
             +footer
         script(src="js/app.min.js") 

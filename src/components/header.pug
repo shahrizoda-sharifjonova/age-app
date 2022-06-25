@@ -1,3 +1,53 @@
 mixin header()
     header.header
-    
+        nav.header__nav.container 
+            a(href="index.html").header__logo #[img(src="@img/logo.png", alt="" draggable="false" loading="lazy")] App.net
+            .menu.enable-lg 
+                span.menu-btn.active
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 7H21" stroke="url(#paint0_linear_301_580)" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M9.48999 12H21" stroke="url(#paint1_linear_301_580)" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M3 12H5.99" stroke="url(#paint2_linear_301_580)" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M3 17H21" stroke="url(#paint3_linear_301_580)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_301_580" x1="12" y1="7" x2="12" y2="8" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#49478C"/>
+                        <stop offset="1" stop-color="#9756FF"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_301_580" x1="15.245" y1="12" x2="15.245" y2="13" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#49478C"/>
+                        <stop offset="1" stop-color="#9756FF"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_301_580" x1="4.495" y1="12" x2="4.495" y2="13" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#49478C"/>
+                        <stop offset="1" stop-color="#9756FF"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_301_580" x1="12" y1="17" x2="12" y2="18" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#49478C"/>
+                        <stop offset="1" stop-color="#9756FF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                span.menu-btn.menu__close.hidden
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.7279 13.7279" stroke="url(#paint0_linear_305_2212)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 13.728L13.7279 1.00011" stroke="url(#paint1_linear_305_2212)" stroke-width="2" stroke-linecap="round"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_305_2212" x1="7.36396" y1="7.36396" x2="6.65685" y2="8.07107" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#49478C"/>
+                    <stop offset="1" stop-color="#9756FF"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_305_2212" x1="7.36396" y1="7.36407" x2="8.07107" y2="8.07117" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#49478C"/>
+                    <stop offset="1" stop-color="#9756FF"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+            ul.header__list
+                .header__list-content.container
+                    li.header__li 
+                        a(href="#!").header__link Политика конфиденциальности  
+                    li.header__li 
+                        a(href="#!").header__link Наша группа #[img(src="@img/header-icon.svg", alt="" draggable="false" loading="lazy")]
+                    button(type="button").header__btn.enable-lg Eng
+            button(type="button").header__btn.disable-lg Eng
