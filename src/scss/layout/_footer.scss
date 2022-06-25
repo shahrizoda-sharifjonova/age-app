@@ -1,1 +1,75 @@
-// Футер
+.footer{
+    padding-top: 50px;
+    padding-bottom: 74px;
+    @include media(992){
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1200){
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 15px;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        @include media(575){
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: flex-start;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #0B2238;
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #666666;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 60px;
+        @include media(1200){
+            column-gap: 27px;
+        }
+        @include media(575){
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 23px;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        column-gap: 9px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #000000;
+        transition: 300ms ease;
+        @include media(375){
+            font-size: 14px;
+        }
+        &:hover{
+            color: #6547A5;
+        }
+    }
+}

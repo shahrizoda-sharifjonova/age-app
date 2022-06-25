@@ -46,6 +46,17 @@
         background: #FAFAFA;
         border-radius: 20px;
         @include media(992){
+            width: calc(100% - 200px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include media(768){
+            width: calc(100% - 100px);
+        }
+        @include media(575){
+            width: calc(100% - 80px);
+        }
+        @include media(450){
             width: 100%;
         }
         &:nth-of-type(1){
@@ -112,11 +123,14 @@
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 64px;
+                @include media(992){
+                    margin-bottom: 30px;
+                }
                 img{
                     @include media(768){
                         width: 310px;
                     }
-                    @include media(375){
+                    @include media(374){
                         width: 275px;
                     }
                 }
