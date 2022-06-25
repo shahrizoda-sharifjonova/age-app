@@ -1,4 +1,18 @@
 mixin try()
     section.section.try 
         .try__body.container 
-            
+            .try__img 
+                img(src="@img/try-img.png", alt="" draggable="false" loading="lazy")
+            .try__content 
+                h2.try__title Попробуй #[br.enable-md] прямо сейчас
+                p.try__desc Скачай приложение и узнай, на сколько лет ты выглядишь?
+                .try__links 
+                    a(href="https://appstore.com").try__link
+                        img(src="@img/intro-appstore.png", alt="" draggable="false" loading="lazy") 
+                    a(href="https://googleplay.com").try__link
+                        img(src="@img/intro-googleplay.png", alt="" draggable="false" loading="lazy") 
+                button(type="button").try__btn Скачать apk для android, huawei
+                .try__abs.enable-lg 
+                    p.try__p Вход в приложение - с помощью #[b любого] электронного адреса e-mail
+            .try__abs.disable-lg 
+                p.try__p Вход в приложение - с помощью #[b любого] электронного адреса e-mail

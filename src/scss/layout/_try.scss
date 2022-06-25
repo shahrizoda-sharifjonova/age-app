@@ -1,0 +1,109 @@
+.try{
+    padding-top: 100px;
+    background: url(../img/try-bg.svg) center / cover no-repeat;
+    @include media(992){
+        padding-top: 41px;
+        margin-bottom: 36px;
+        background: url(../img/try-bg.svg) left / cover no-repeat;
+    }
+    &__body{
+        display: flex;
+        justify-content: center;
+        column-gap: 205px;
+        align-items: center;
+        position: relative;
+        @include media(992){
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 10px;
+        max-width: 388px;
+        width: 100%;
+        @include media(768){
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 25px;
+        }
+    }
+    &__desc{
+        margin-bottom: 38px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #585858;
+        max-width: 400px;
+        width: 100%;
+    }
+    &__links{
+        display: flex;
+        align-items: stretch;
+        column-gap: 12px;
+        margin-bottom: 17px;
+        @include media(768){
+            margin-bottom: 9px;
+        }
+    }
+    &__btn{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(85.89deg, #8FDA75 7.82%, #4E9B1F 117.28%);
+        border-radius: 10px;
+        width: 323px;
+        height: 54px;
+        @include media(575){
+            width: 100%;
+        }
+    }
+    &__abs{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 201px;
+        background: url(../img/try-abs-bg.svg) center / cover no-repeat;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(992){
+            position: static;
+            margin-top: 40px;
+            height: 158px;
+        }
+        &.enable-lg{
+            @include media(992){
+                display: flex !important;
+            }
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.8px;
+        color: #FFFFFF;
+        max-width: 520px;
+        width: 100%;
+        @include media(768){
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 290px;
+            width: 100%;
+        }
+    }
+}
